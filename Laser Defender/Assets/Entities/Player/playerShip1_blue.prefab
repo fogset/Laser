@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212615434836923070}
   - component: {fileID: 114539473788185230}
   - component: {fileID: 60047052332973010}
+  - component: {fileID: 50335412031529288}
   m_Layer: 0
   m_Name: playerShip1_blue
   m_TagString: Untagged
@@ -42,6 +43,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &50335412031529288
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1561183926699366}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 1
+  m_Mass: 0.41403428
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!60 &60047052332973010
 PolygonCollider2D:
   m_ObjectHideFlags: 1
@@ -51,27 +72,28 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   m_Points:
     m_Paths:
     - - {x: 0.4911941, y: 0.07933068}
-      - {x: 0.416544, y: 0.03500104}
-      - {x: 0.35872665, y: 0.0022444725}
-      - {x: 0.14402878, y: 0.11321545}
-      - {x: 0.100748, y: 0.37119436}
-      - {x: -0.105, y: 0.375}
-      - {x: -0.145, y: 0.125}
-      - {x: -0.3563384, y: 0.00030207634}
+      - {x: 0.41912046, y: 0.03500104}
+      - {x: 0.36645612, y: -0.008061409}
+      - {x: 0.12856966, y: 0.12352133}
+      - {x: 0.09044206, y: 0.37119436}
+      - {x: -0.086964376, y: 0.3724234}
+      - {x: -0.12954108, y: 0.12242365}
+      - {x: -0.3537619, y: -0.0074272156}
       - {x: -0.49499997, y: 0.095}
-      - {x: -0.49499997, y: -0.24499999}
-      - {x: -0.4059712, y: -0.23552513}
+      - {x: -0.48469394, y: -0.2372706}
+      - {x: -0.42915958, y: -0.24583101}
+      - {x: -0.3985705, y: -0.22545075}
       - {x: -0.13358267, y: -0.28358293}
-      - {x: -0.095, y: -0.375}
-      - {x: 0.105, y: -0.375}
-      - {x: 0.14082688, y: -0.2926116}
-      - {x: 0.39300305, y: -0.22958875}
+      - {x: -0.08469406, y: -0.37242365}
+      - {x: 0.081811614, y: -0.36984682}
+      - {x: 0.13825041, y: -0.2848823}
+      - {x: 0.403309, y: -0.22701216}
       - {x: 0.45499998, y: -0.265}
       - {x: 0.47216532, y: -0.26261163}
 --- !u!114 &114539473788185230
@@ -90,6 +112,7 @@ MonoBehaviour:
   projectile: {fileID: 1063340354615238, guid: 72abfeae033da7946ae4a62b74c7922e, type: 2}
   projectileSpeed: 5
   firingRate: 0.15
+  health: 250
 --- !u!212 &212615434836923070
 SpriteRenderer:
   m_ObjectHideFlags: 1
