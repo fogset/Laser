@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 50485177844579420}
   - component: {fileID: 61105615693993596}
   - component: {fileID: 114726051410560074}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88,9 +88,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2c78fcc5a586ef458716128df8c22e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 15
   projectile: {fileID: 1063340354615238, guid: 72b980d0ee4134243a9a801b32be9f99, type: 2}
   health: 250
+  projectileSpeed: 10
+  shotsPerSeconds: 0.5
 --- !u!212 &212426288677188758
 SpriteRenderer:
   m_ObjectHideFlags: 1
