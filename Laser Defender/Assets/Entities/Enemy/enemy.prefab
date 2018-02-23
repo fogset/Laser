@@ -89,7 +89,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 1063340354615238, guid: 72b980d0ee4134243a9a801b32be9f99, type: 2}
-  health: 250
+  health: 100
   projectileSpeed: 10
   shotsPerSeconds: 0.5
 --- !u!212 &212426288677188758

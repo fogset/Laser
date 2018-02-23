@@ -18,12 +18,13 @@ public class EnemyBehaviour : MonoBehaviour {
             Fire();
         }
         
+
     }
     void Fire()
     {
         Vector3 startPosition = transform.position + new Vector3(0, -1, 0);
-        GameObject missile = Instantiate(projectile, startPosition, Quaternion.identity) as GameObject;
-        missile.GetComponent<Rigidbody2D>().velocity = new Vector2(0, -projectileSpeed);
+        GameObject enemymissile = Instantiate(projectile, startPosition, Quaternion.identity) as GameObject;
+        enemymissile.GetComponent<Rigidbody2D>().velocity = new Vector2(0, -projectileSpeed);
     }
     void OnTriggerEnter2D(Collider2D collider)
         {

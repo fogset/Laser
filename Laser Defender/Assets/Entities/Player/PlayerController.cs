@@ -31,8 +31,8 @@ public class PlayerController : MonoBehaviour
     }
     void Fire()
     {
-        Vector3 playerstartPosition = transform.position + new Vector3(0, 1, 0);
-        GameObject beam = Instantiate(projectile, playerstartPosition, Quaternion.identity) as GameObject;
+        Vector3 playerlaserstartPosition = transform.position + new Vector3(0, 1, 0);
+        GameObject beam = Instantiate(projectile, playerlaserstartPosition, Quaternion.identity) as GameObject;
         beam.GetComponent<Rigidbody2D>().velocity = new Vector3(0, projectileSpeed, 0);
     }
     void Update()
@@ -74,10 +74,11 @@ public class PlayerController : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        Debug.Log("player collided with missile");
+        
         Projectile missile = collider.gameObject.GetComponent<Projectile>();
         if (missile)
         {
+            Debug.Log("player collided with missile");
             health -= missile.getDamage();
             missile.Hit();
             if (health <= 0)
