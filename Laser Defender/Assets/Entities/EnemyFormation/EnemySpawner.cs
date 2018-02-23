@@ -93,7 +93,7 @@ public class EnemySpawner : MonoBehaviour {
     {
         foreach (Transform childPositionGameObject in transform)
         {
-            if (childPositionGameObject.childCount == 0)
+            if (childPositionGameObject.childCount ==0)
             {
                 return childPositionGameObject;
             }
