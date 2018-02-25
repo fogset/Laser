@@ -9,8 +9,13 @@ public class EnemyBehaviour : MonoBehaviour {
     public float health = 250;
     public float projectileSpeed = 10;
     public float shotsPerSeconds = 0.5f;
+    public int scoreValue = 150;
 
-
+    private ScoreKeeper scoreKeeper;
+    void Start()
+    {
+        scoreKeeper = GameObject.Find("ScoreKeeper").GetComponent<ScoreKeeper>();
+    }
     void Update()
     {
         float probability = Time.deltaTime * shotsPerSeconds;
@@ -35,6 +40,7 @@ public class EnemyBehaviour : MonoBehaviour {
                 missile.Hit();
                 if (health <= 0){
                     Destroy(gameObject);
+                    scoreKeeper.Reset();
                 }
             }
         }
