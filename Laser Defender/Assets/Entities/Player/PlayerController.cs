@@ -7,13 +7,14 @@ public class PlayerController : MonoBehaviour
     public float speed = 15.0f;
     public float padding = 0.5f;
     // Use this for initialization
-    float xmin;
-    float xmax;
-    float ymin, ymax;
+    float xmin, xmax , ymin, ymax;
+
     public GameObject projectile;
     public float projectileSpeed;
     public float firingRate=0.2f;
     public float health = 250;
+
+    public AudioClip fireSound;
 
     void Start()
     {
@@ -34,6 +35,7 @@ public class PlayerController : MonoBehaviour
         Vector3 playerlaserstartPosition = transform.position + new Vector3(0, 1, 0);
         GameObject beam = Instantiate(projectile, playerlaserstartPosition, Quaternion.identity) as GameObject;
         beam.GetComponent<Rigidbody2D>().velocity = new Vector3(0, projectileSpeed, 0);
+        AudioSource.PlayClipAtPoint(fireSound,transform.position);
     }
     void Update()
     {

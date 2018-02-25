@@ -9,10 +9,10 @@ public class ScoreKeeper : MonoBehaviour {
     private Text myText;
     void Start(){
         myText = GetComponent<Text>();
+        Reset();
     }
     public void Score(int points)
     {
-        Debug.Log("Scored points");
         score += points;
         myText.text = score.ToString();
     }

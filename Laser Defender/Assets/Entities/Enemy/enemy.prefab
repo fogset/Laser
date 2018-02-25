@@ -110,6 +110,9 @@ MonoBehaviour:
   health: 100
   projectileSpeed: 10
   shotsPerSeconds: 0.5
+  scoreValue: 150
+  fireSound: {fileID: 8300000, guid: 51e4e9872d670fc46a47216e3db2fe51, type: 3}
+  enemydie: {fileID: 8300000, guid: 59231a28005ce6149ae6cb5e484855e1, type: 3}
 --- !u!212 &212426288677188758
 SpriteRenderer:
   m_ObjectHideFlags: 1
