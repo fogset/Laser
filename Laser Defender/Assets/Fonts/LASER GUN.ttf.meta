@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 5376e4f846bacae4aac91a4b25c67e51
+timeCreated: 1519716589
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: LASER GUN
+  fontNames:
+  - LASER GUN
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

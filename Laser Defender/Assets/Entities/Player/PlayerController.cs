@@ -85,9 +85,15 @@ public class PlayerController : MonoBehaviour
             missile.Hit();
             if (health <= 0)
             {
-                Destroy(gameObject);
+                Die();
             }
         }
+    }
+    void Die()
+    {
+        LevelManager loadlvl = FindObjectOfType<LevelManager>();
+        loadlvl.LoadLevel("Win Screen");
+        Destroy(gameObject);
     }
 }
 
